@@ -1,0 +1,82 @@
+.header {
+  @apply flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70;
+  
+  >header {
+    @apply z-40 flex gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[var(--max-width)];
+  
+    .navbar-brand {
+      @apply flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border;
+    }
+
+    .navbar-content {
+      @apply flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0;
+    }
+  }
+}
+
+.navbar-menu {
+  @apply z-30 px-6 pt-2 fixed flex max-w-full top-[var(--navbar-height)] inset-x-0 bottom-0 w-screen flex-col gap-2 overflow-y-auto backdrop-blur-xl backdrop-saturate-150 bg-background/70;
+  background-color: rgba(#F5EC81, 0.5);
+}
+
+.navbar-item {
+  @apply text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold;
+
+  .navbar-link {
+    @apply relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium hover:opacity-80 active:opacity-disabled transition-opacity;
+  }
+}
+
+.header {
+  @apply bg-yellow;
+
+  >header {
+    .navbar-content {
+    }
+
+    .navbar-menu-toggle {
+      @apply w-6 h-4;
+      @apply text-[0px];
+      @apply relative;
+      @apply cursor-pointer;
+
+      &::before {
+        content: '';
+        @apply absolute top-0 left-0 w-full h-[3px] bg-black;
+        @apply transform rounded-full origin-center;
+        @apply transition-all duration-300;
+      }
+      
+      &::after {
+        content: '';
+        @apply absolute bottom-0 left-0 w-full h-[3px] bg-black;
+        @apply transform rounded-full origin-center;
+        @apply transition-all duration-300;
+      }
+
+      &[data-open="true"] {
+        &::before {
+          @apply rotate-45 translate-y-[0.4rem];
+        }
+        
+        &::after {
+          @apply -rotate-45 translate-y-[-0.4rem];
+        }
+      }
+    }
+  }
+}
+
+.navbar-item {
+  @apply uppercase font-bold;
+
+  .navbar-link[data-active="false"] {
+    @apply no-underline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header >header .navbar-content {
+    @apply hidden;
+  }
+}

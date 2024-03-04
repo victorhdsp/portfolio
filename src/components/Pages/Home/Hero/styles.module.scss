@@ -1,0 +1,40 @@
+.hero {
+  // @apply h-[600px];
+  @apply flex items-center;
+  @apply py-section;
+  @apply relative;
+  
+  >div {
+    @apply grid grid-cols-2 gap-md;
+    
+    .text {
+      @apply flex flex-col gap-sm justify-center;
+
+      .features {
+        @apply flex flex-col gap-2;
+        @apply mt-6;
+  
+        a {
+          @apply pointer-events-auto;
+        }
+      }
+    }
+
+    .image {
+      @apply flex h-[300px];
+      @apply rounded-lg overflow-hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    >div {
+      @apply grid-cols-1;
+
+      .image {
+        @apply row-start-1;
+      }
+    }
+  }
+}

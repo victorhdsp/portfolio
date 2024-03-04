@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Jost", sans-serif;
+
+  @apply grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  .container {
+    @apply max-w-[var(--max-width)] mx-auto;
+  }
+  
+  h2,h3 {
+    font-family: "Jockey One", sans-serif;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 42px;
+    line-height: 1;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    &.large {
+      font-size: 20px;
+    }
+  }
+
+  a {
+    @apply underline;
+  }
+
+  .button {
+    @apply rounded-lg border border-orange;
+    @apply px-6 py-2;
+    @apply bg-orange;
+    @apply uppercase font-bold;
+    @apply transition-colors duration-300;
+    font-size: 14px;
+
+    &:hover {
+      @apply bg-yellow;
+    }
+  }
+}

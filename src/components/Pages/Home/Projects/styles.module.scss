@@ -1,0 +1,17 @@
+.projects {
+  @apply py-section;
+  @apply relative z-0;
+  @apply bg-gray-50;
+  
+  >div {
+    @apply flex flex-col;
+
+    .text {
+      @apply flex flex-col gap-sm;
+    }
+
+    .content {
+      @apply flex flex-col;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.ThemeSelector {
+  @apply relative;
+  @apply p-1;
+  @apply w-12;
+  @apply rounded-xl;
+  @apply flex items-center;
+  @apply transition-all duration-300 ease-in-out;
+
+  button {
+    @apply w-6 h-6;
+    @apply rounded-lg;
+  }
+
+  &[data-theme="dark"] {
+    @apply bg-gray-800;
+    @apply justify-end;
+
+    button {
+      @apply bg-gray-800;
+    }
+  }
+
+  &[data-theme="light"] {
+    @apply bg-gray-200;
+    @apply justify-start;
+
+    button {
+      @apply bg-yellow;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.footer {
+  @apply bg-purple-light;
+  @apply py-3;
+
+  >div {
+    @apply flex justify-center items-center;
+  }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-width: 1100px;
+
+  --color-orange: #D59D2F;
+  --color-yellow: #F5EC81;
+  --color-purple-dark: #4B0C50;
+  --color-purple: #A14D8B;
+  --color-purple-light: #C9BBDE;
+
+  --spacing-section: 80px;
+
+  --gap-sm: 10px;
+  --gap-md: 30px;
+  --gap-lg: 74px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --max-width: 90vw;
+    
+    --spacing-section: 40px;
+
+    --gap-sm: 10px;
+    --gap-md: 20px;
+    --gap-lg: 40px;
+  }
+}
