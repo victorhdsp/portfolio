@@ -26,7 +26,7 @@ export default function Text(props:Props) {
             trigger: root,
             start: "top 50%",
             end: "bottom 50%",
-            markers: true,
+            // markers: true,
             onUpdate: ({progress}) => {
               box.current.style.transform = `translateY(${(progress * (rootSize - boxSize))}px)`
             },
