@@ -11,7 +11,7 @@
     }
   }
   
-  &[data-isZoomed="true"] >div {
+  &[data-iszoomed="true"] >div {
     @apply overflow-hidden;
 
     .img {

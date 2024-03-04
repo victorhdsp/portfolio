@@ -11,9 +11,9 @@ export default function Transition({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
+  if(typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
-  }, [])
+  }
   
   return (
     <motion.div

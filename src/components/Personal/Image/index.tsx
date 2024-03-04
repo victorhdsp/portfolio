@@ -8,7 +8,7 @@ export default function ImageComponent(props: Props) {
   return (
     <div 
       className={`${css["root"]} ${props.className}`}
-      data-isZoomed={props.isZoomed}
+      data-iszoomed={props.isZoomed}
     >
       <Image 
         {...props} 
