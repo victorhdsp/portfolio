@@ -16,26 +16,23 @@ export default function Text(props:Props) {
   useEffect(() => {
     if (box.current) {
       const root = box.current.offsetParent
-      
+
       if (window.innerWidth > 768) {
-        gsap.timeline({
+        const boxSize = box.current.getBoundingClientRect().height
+        const rootSize = root?.getBoundingClientRect().height || 0
+
+        const tl = gsap.timeline({
           scrollTrigger: {
             trigger: root,
-            start: "10% bottom",
-            end: "bottom 70%",
+            start: "top 50%",
+            end: "bottom 50%",
+            markers: true,
+            onUpdate: ({progress}) => {
+              box.current.style.transform = `translateY(${(progress * (rootSize - boxSize))}px)`
+            },
             onToggle: (self) => {
               root?.classList.toggle(css['active'], self.isActive)
             },
-          },
-        });
-    
-        gsap.timeline({
-          scrollTrigger: {
-            scrub: 1,
-            pin: true,
-            trigger: box.current,
-            start: "top 50%",
-            end: "bottom 50%"
           },
         });
       } else {

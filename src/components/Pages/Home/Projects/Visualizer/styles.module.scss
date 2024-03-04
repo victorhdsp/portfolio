@@ -1,6 +1,7 @@
 .root {
   @apply grid gap-md;
   @apply my-16;
+  @apply overflow-hidden;
   grid-template-columns: 1fr 2fr;
   @apply relative;
 
@@ -13,7 +14,7 @@
     @apply max-w-[365px] h-max;
   
     .item {
-      @apply opacity-0;
+      @apply opacity-20;
       @apply transition-opacity duration-300;
 
     }
