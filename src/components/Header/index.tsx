@@ -35,7 +35,7 @@ export default function Header () {
   return (
     <Navbar className={css["header"]} shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
       <NavbarBrand className={css["navbar-brand"]}>
-        <p>Logo</p>
+        {/* <p>Logo</p> */}
       </NavbarBrand>
 
       <NavbarMenuToggle

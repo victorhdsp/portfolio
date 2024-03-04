@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@next/font':
+    specifier: ^14.1.0
+    version: 14.1.0(next@14.1.1)
   '@nextui-org/react':
     specifier: ^2.2.10
     version: 2.2.10(@types/react@18.2.61)(framer-motion@11.0.8)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.2.0)(tailwindcss@3.4.1)
@@ -248,6 +251,14 @@ packages:
     dependencies:
       glob: 10.3.10
     dev: true
+
+  /@next/font@14.1.0(next@14.1.1):
+    resolution: {integrity: sha512-9hJ7bEYDI7UGQ1a++5zRD3F2VUu9NIaK5Hro/uL9bvFFs6b0Cy1OdLtLQHCIQE7sSMt8Rbu4VtcbnlubsseelA==}
+    peerDependencies:
+      next: '*'
+    dependencies:
+      next: 14.1.1(react-dom@18.2.0)(react@18.2.0)(sass@1.71.1)
+    dev: false
 
   /@next/swc-darwin-arm64@14.1.1:
     resolution: {integrity: sha512-yDjSFKQKTIjyT7cFv+DqQfW5jsD+tVxXTckSe1KIouKk75t1qZmj/mV3wzdmFb0XHVGtyRjDMulfVG8uCKemOQ==}
