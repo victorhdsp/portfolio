@@ -11,26 +11,24 @@ interface Props {
 }
 
 export default function Text(props:Props) {
-  const box = useRef(null);
+  const box = useRef<null|HTMLDivElement>(null);
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
-      if (box.current) {
-        const root = box.current.offsetParent
-        
+    if (box.current) {
+      const root = box.current.offsetParent
+      
+      if (window.innerWidth > 768) {
         gsap.timeline({
           scrollTrigger: {
             trigger: root,
             start: "10% bottom",
             end: "bottom 70%",
             onToggle: (self) => {
-              root.classList.toggle(css['active'], self.isActive)
+              root?.classList.toggle(css['active'], self.isActive)
             },
           },
         });
-      }
-  
-      if (box.current) {
+    
         gsap.timeline({
           scrollTrigger: {
             scrub: 1,
@@ -40,11 +38,8 @@ export default function Text(props:Props) {
             end: "bottom 50%"
           },
         });
-      }
-    } else {
-      if (box.current) {
-        const root = box.current.offsetParent
-        root.classList.add(css['active'])
+      } else {
+        root?.classList.add(css['active'])
       }
     }
   }, [])
