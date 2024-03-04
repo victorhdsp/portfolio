@@ -14,21 +14,22 @@ export default function Text(props:Props) {
   const box = useRef<null|HTMLDivElement>(null);
 
   useEffect(() => {
-    if (box.current) {
-      const root = box.current.offsetParent
+    const boxCurrent = box.current
+    if (boxCurrent) {
+      const root = boxCurrent.offsetParent
 
       if (window.innerWidth > 768) {
-        const boxSize = box.current.getBoundingClientRect().height
+        const boxSize = boxCurrent.getBoundingClientRect().height
         const rootSize = root?.getBoundingClientRect().height || 0
 
-        const tl = gsap.timeline({
+        gsap.timeline({
           scrollTrigger: {
             trigger: root,
             start: "top 50%",
             end: "bottom 50%",
             // markers: true,
             onUpdate: ({progress}) => {
-              box.current.style.transform = `translateY(${(progress * (rootSize - boxSize))}px)`
+              boxCurrent.style.transform = `translateY(${(progress * (rootSize - boxSize))}px)`
             },
             onToggle: (self) => {
               root?.classList.toggle(css['active'], self.isActive)
