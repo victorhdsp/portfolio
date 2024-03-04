@@ -1,8 +1,20 @@
 .footer {
   @apply bg-purple-light;
-  @apply py-3;
+  @apply py-8;
 
   >div {
-    @apply flex justify-center items-center;
+    @apply flex justify-between items-end;
+
+    .text {
+      @apply flex flex-col gap-2;
+
+      h3 {
+        @apply mb-3;
+      }
+    }
+
+    .social {
+      @apply flex flex-col gap-2;
+    }
   }
 }

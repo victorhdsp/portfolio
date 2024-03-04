@@ -43,7 +43,7 @@ export default function Hero () {
                 </div>
               </div>
               <div className={css["image"]}>
-                <Image src="/images/home/victorhdsp.png" alt="Victor Hugo" width={413} height={300} />
+                {/* <Image src="/images/home/victorhdsp.png" alt="Victor Hugo" width={413} height={300} /> */}
               </div>
             </div>
         </section>

@@ -3,13 +3,15 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  cursor: none;
 }
 
 body {
   font-size: 16px;
   line-height: 1.2;
   font-family: "Jost", sans-serif;
-
+  font-weight: 400;
   @apply grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -47,15 +49,16 @@ body {
   }
 
   .button {
-    @apply rounded-lg border border-orange;
+    @apply rounded-lg border border-yellow;
     @apply px-6 py-2;
-    @apply bg-orange;
+    @apply bg-yellow;
     @apply uppercase font-bold;
     @apply transition-colors duration-300;
+    @apply cursor-none;
     font-size: 14px;
 
     &:hover {
-      @apply bg-yellow;
+      @apply bg-orange border-orange;
     }
   }
 }

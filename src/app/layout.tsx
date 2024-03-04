@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import { Providers } from "./providers";
+import MouseCursor from "@/components/Personal/MouseCursor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -37,6 +38,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+        <MouseCursor />
       </body>
     </html>
   );
