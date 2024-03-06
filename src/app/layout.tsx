@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anonymous_Pro } from '@next/font/google'
+import { Anonymous_Pro } from 'next/font/google'
 
 import "./tailwind.scss";
 import "./globals.scss";
