@@ -5,7 +5,7 @@
   @apply border-black border rounded-full;
   @apply bg-transparent;
   @apply pointer-events-none;
-  @apply transition-transform duration-200 ease-in-out;
+  @apply transition-transform-background duration-200 ease-in-out;
   @apply opacity-75;
 
   [data-icon] {
@@ -23,4 +23,18 @@
 
   &.camera-right .arrow-right { @apply scale-100; }
   &.camera-left .arrow-left { @apply scale-100; }
+
+  &.pointer {
+    @apply bg-black;
+    @apply scale-125;
+
+    .arrow-pointer { @apply scale-100; }
+  }
+
+  &.web {
+    @apply bg-black;
+    @apply scale-125;
+
+    .arrow-web { @apply scale-80; }
+  }
 }

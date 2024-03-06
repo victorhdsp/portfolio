@@ -6,6 +6,7 @@
     @apply w-4 h-4;
     @apply border-black border border-solid rounded-full;
     @apply flex items-center justify-center;
+    @apply cursor-none;
     
     &::before {
       @apply pointer-events-none;

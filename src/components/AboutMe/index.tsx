@@ -21,7 +21,7 @@ export default function AboutMe() {
         <div className={css["text"]}>
           { aboutme.curriculum.resume.map(text=>(<p key={text}>{text}</p>)) }
         </div>
-        <Link href="/sobre-mim">Leia mais</Link>
+        <button data-view>Leia mais</button>
       </div>
 
       <div className={css["contacts"]}>

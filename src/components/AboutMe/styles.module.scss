@@ -24,6 +24,10 @@
       @apply flex flex-col gap-[7px];
       @apply overflow-y-auto;
     }
+    
+    button {
+      @apply w-max underline;
+    }
   }
 
   .contacts {

@@ -49,5 +49,5 @@
 
 [x] Icone de seta ao passar o mouse em uma "area de movimento".
 [] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
-[] Icone de ação no mouse ao estar em cima de "eventos de ação".
-[] Icon de web ao passar o mouse em um "link externo".
+[x] Icone de ação no mouse ao estar em cima de "eventos de ação".
+[x] Icon de web ao passar o mouse em um "link externo".
