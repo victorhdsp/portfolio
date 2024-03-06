@@ -1,11 +1,11 @@
-interface Skill {
+export interface HardSkill {
   name: string,
   level: 1 | 2 | 3 | 4 | 5,
   alt?: string
 }
 
 export interface HardSkills {
-  [key: string]: Skill
+  [key: string]: HardSkill
 }
 
 const hardskills: HardSkills = {

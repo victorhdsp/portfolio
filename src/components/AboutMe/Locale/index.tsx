@@ -1,13 +1,13 @@
 import css from './styles.module.scss'
-import * as Popover from "@radix-ui/react-popover";
+import * as HoverCard from '@radix-ui/react-hover-card';
 
 import Image from "next/image";
 import Link from 'next/link';
 
 export default function Locale () {
   return (
-    <Popover.Root>
-      <Popover.Trigger>
+    <HoverCard.Root>
+      <HoverCard.Trigger asChild>
         <Image
           className={css["trigger"]}
           src="/svg/icon/locale.svg" 
@@ -16,10 +16,10 @@ export default function Locale () {
           height={24} 
           data-view
         />
-      </Popover.Trigger>
+      </HoverCard.Trigger>
       
-      <Popover.Portal>
-        <Popover.Content>
+      <HoverCard.Portal>
+        <HoverCard.Content>
           <div className={css["content"]}>
             <span className={css["item"]}>
               <Image src="/svg/icon/map.svg" alt="Mapa" width={16} height={16} />
@@ -28,11 +28,9 @@ export default function Locale () {
               </Link>
             </span>
           </div>
-
-          <Popover.Close />
-          <Popover.Arrow />
-        </Popover.Content>
-      </Popover.Portal>
-    </Popover.Root>
+          <HoverCard.Arrow />
+        </HoverCard.Content>
+      </HoverCard.Portal>
+    </HoverCard.Root>
   )
 }

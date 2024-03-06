@@ -1,11 +1,11 @@
 import css from './styles.module.scss'
-import * as Popover from "@radix-ui/react-popover";
+import * as HoverCard from '@radix-ui/react-hover-card';
 import Image from "next/image";
 
 export default function Profile () {
   return (
-    <Popover.Root>
-      <Popover.Trigger>
+    <HoverCard.Root>
+      <HoverCard.Trigger asChild>
         <Image
           className={css["trigger"]}
           src="/svg/icon/profile.svg" 
@@ -14,10 +14,10 @@ export default function Profile () {
           height={24} 
           data-view
         />
-      </Popover.Trigger>
+      </HoverCard.Trigger>
       
-      <Popover.Portal>
-        <Popover.Content>
+      <HoverCard.Portal>
+        <HoverCard.Content>
           <div className={css["content"]}>
             <span className={css["item"]}>
               <Image src="/svg/icon/man.svg" alt="Sexo masculino" width={16} height={16} />
@@ -28,11 +28,9 @@ export default function Profile () {
               <p>29/12/1998</p>
             </span>
           </div>
-
-          <Popover.Close />
-          <Popover.Arrow />
-        </Popover.Content>
-      </Popover.Portal>
-    </Popover.Root>
+          <HoverCard.Arrow />
+        </HoverCard.Content>
+      </HoverCard.Portal>
+    </HoverCard.Root>
   )
 }

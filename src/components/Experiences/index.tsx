@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import aboutme from '@/assets/data/aboutme'
 import IconsCarousel from '../Default/IconsCarousel';
+import Technology from './Technology';
+import SoftSkill from './Softskill';
 
 
 export default function Experiences() {
@@ -60,9 +62,7 @@ export default function Experiences() {
             Object.keys(hardskills).map((index) => {
               const skill = hardskills[index]
               return (
-                <span key={index} className={css["item"]}>
-                  <Image src={`/svg/tech/${index}.svg`} alt={skill.name} width={36} height={36} />
-                </span>
+                <Technology key={index} src={`/svg/tech/${index}.svg`} skill={skill} />
               )
             })
           }
@@ -79,10 +79,7 @@ export default function Experiences() {
             Object.keys(softskills).map((index) => {
               const skill = softskills[index]
               return (
-                <span key={index} className={css["item"]}>
-                  <Image src={`/svg/softskills/${index}.svg`} alt={skill.name} width={24} height={24} />
-                  {/* <p>{ skill.name }</p> */}
-                </span>
+                <SoftSkill key={index} src={`/svg/softskills/${index}.svg`} skill={skill} />
               )
             })
           }

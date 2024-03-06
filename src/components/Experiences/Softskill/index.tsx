@@ -1,0 +1,35 @@
+import css from './styles.module.scss'
+import { useState } from 'react'
+
+import Image from 'next/image'
+import * as HoverCard from '@radix-ui/react-hover-card';
+
+import { Softskill } from "@/assets/data/softskills"
+
+interface Props {
+  src: string,
+  skill: Softskill
+}
+
+export default function SoftSkill({ src, skill }: Props) {
+
+  return (
+    <HoverCard.Root>
+      <HoverCard.Trigger asChild>
+        <span data-view className={css["trigger"]}>
+          <Image src={src} alt={skill.name} width={24} height={24} />
+        </span>
+      </HoverCard.Trigger>
+      <HoverCard.Portal>
+        <HoverCard.Content>
+          <div className={css["content"]}>
+            <span className={css["item"]}>
+              <p>{skill.name}</p>
+            </span>
+          </div>
+          <HoverCard.Arrow />
+        </HoverCard.Content>
+      </HoverCard.Portal>
+    </HoverCard.Root>
+  )
+}

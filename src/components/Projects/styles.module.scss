@@ -11,6 +11,10 @@
     .item {
       @apply flex flex-col gap-[7px];
       @apply text-center;
+
+      img {
+        @apply w-full;
+      }
     }
   }
 }

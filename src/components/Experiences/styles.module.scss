@@ -33,19 +33,10 @@
       }
     }
   }
-
-  .hard-skill, .soft-skill {
-    .item {
-      @apply flex items-center gap-[7px];
-      @apply px-[16px];
-    }
-  }
-
-  // Especifico
 }
 
 @media screen and (max-width: 768px){
   .experiences {
-    @apply w-full;
+    @apply w-full gap-[30px];
   }
 }

@@ -52,9 +52,11 @@
 [x] Adicionar carousel em "tecnologias", "soft skills", "hard skills".
 [] Adicionar carousel vertical em "projetos".
 [x] Adicionar link para o "github" e "linkedin".
-[] Funcionalidade de "accordion" nas "soft skills"
+[x] Funcionalidade de "accordion" nas "soft skills" (modificado pra ficar padronizado com hovercard)
+[] Adicionar Toast de aviso ao copiar informação com o "clipboard".
 
 [] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
+[] Dialog lateral com barra de pesquisa para "Experiências"
 
 [x] Icone de seta ao passar o mouse em uma "area de movimento".
 [x] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".

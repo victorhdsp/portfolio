@@ -37,7 +37,15 @@ const curriculum = {
         learning: [
           'Comunicação e Oratória',
         ]
-      }
+      },
+      {
+        institution: 'Descomplica',
+        course: 'Comunicação e Oratória.',
+        period: '01/22 - 12/24',
+        learning: [
+          'Comunicação e Oratória',
+        ]
+      },
     ],
   },
   hardskills,

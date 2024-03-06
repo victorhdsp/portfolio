@@ -1,14 +1,14 @@
 import CopyToClipboard from '@/components/Default/CopyToClipboard';
 import css from './styles.module.scss'
-import * as Popover from "@radix-ui/react-popover";
+import * as HoverCard from '@radix-ui/react-hover-card';
 
 import Image from "next/image";
 import Link from 'next/link';
 
 export default function Email () {
   return (
-    <Popover.Root>
-      <Popover.Trigger>
+    <HoverCard.Root>
+      <HoverCard.Trigger asChild>
         <Image
           className={css["trigger"]}
           src="/svg/icon/email.svg" 
@@ -17,10 +17,10 @@ export default function Email () {
           height={24} 
           data-view
         />
-      </Popover.Trigger>
+      </HoverCard.Trigger>
       
-      <Popover.Portal>
-        <Popover.Content align='start'>
+      <HoverCard.Portal>
+        <HoverCard.Content align='start'>
           <div className={css["content"]}>
             <span className={css["item"]}>
               <CopyToClipboard text="victorhugods.pereira@gmail.com" size={16} />
@@ -29,11 +29,9 @@ export default function Email () {
               </Link>
             </span>
           </div>
-
-          <Popover.Close />
-          <Popover.Arrow />
-        </Popover.Content>
-      </Popover.Portal>
-    </Popover.Root>
+          <HoverCard.Arrow />
+        </HoverCard.Content>
+      </HoverCard.Portal>
+    </HoverCard.Root>
   )
 }
