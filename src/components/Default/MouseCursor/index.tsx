@@ -37,6 +37,7 @@ export default function MouseCursor() {
 
           hasHover("data-camera-left")
           hasHover("data-camera-right")
+          hasHover("data-view")
 
           hasHoverTag("BUTTON", "pointer")
           hasHoverTag("A", "web")
@@ -52,6 +53,7 @@ export default function MouseCursor() {
       <Image data-icon className={css["arrow-left"]} src="/svg/icon/arrow-left.svg" alt="Seta para esquerda" width={24} height={24} />
       <Image data-icon className={css["arrow-pointer"]} src="/svg/icon/mouse.svg" alt="Cursor de ação" width={24} height={24} />
       <Image data-icon className={css["arrow-web"]} src="/svg/icon/web.svg" alt="Cursor de acesso externo" width={24} height={24} />
+      <Image data-icon className={css["arrow-view"]} src="/svg/icon/eye.svg" alt="Abre um popup ou hover card" width={24} height={24} />
     </span>
   )
 }

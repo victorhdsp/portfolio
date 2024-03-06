@@ -5,7 +5,8 @@
   @apply border-black border rounded-full;
   @apply bg-transparent;
   @apply pointer-events-none;
-  @apply transition-transform-background duration-200 ease-in-out;
+  transition-property: transform, color, background-color, border-color, text-decoration-color, fill, stroke;
+  @apply duration-200 ease-in-out;
   @apply opacity-75;
 
   [data-icon] {
@@ -35,6 +36,13 @@
     @apply bg-black;
     @apply scale-125;
 
-    .arrow-web { @apply scale-80; }
+    .arrow-web { @apply scale-75; }
+  }
+
+  &.view {
+    @apply bg-black;
+    @apply scale-150;
+
+    .arrow-view { @apply scale-100; }
   }
 }
