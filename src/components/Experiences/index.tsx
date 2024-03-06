@@ -28,18 +28,18 @@ export default function Experiences() {
         <div className={css["item"]}>
           <span><b>Estácio de Sá</b> - <p>01/22 | 12/24</p></span>
           <h3>Analise e desenvolvimento de sistemas</h3>
-          <ul>
+          {/* <ul>
             <li>Planejamento de banco de dados.</li>
             <li>Java</li>
-          </ul>
+          </ul> */}
         </div>
         <div className={css["item"]}>
           <span><b>Escola Conquer</b> - <p>01/22 | 12/24</p></span>
           <h3>Comunicação e Oratória</h3>
-          <ul>
+          {/* <ul>
             <li>Comunicação.</li>
             <li>Oratória</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
 
