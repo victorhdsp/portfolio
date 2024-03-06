@@ -37,15 +37,24 @@
 [] Remover NextUI
 [] Adicionar gerenciador de estados
 
+[x] Adicionar biblioteca de carousel
+[] Adicionar bliblioteca de dialog
+[] Adicionar bliblioteca de accordion
+[] Adicionar bliblioteca de popover
+[] Adicionar bliblioteca de hovercard
+
 [*] Colocar todos os dados nos assets
 [] Funcionalidade "ver mais" no resumo.
 [] Visualizar "e-mail", "telefone", "endereço" e "perfil" ao colocar a seta sobre os icones.
 [] Funcionalidade "ver mais" em "experiências" e "educação".
 [] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
 [] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
-[*] Adicionar carousel em "tecnologias", "soft skills", "hard skills" e "projetos".
-[] Adicionar link para o "github" e "linkedin".
+[x] Adicionar carousel em "tecnologias", "soft skills", "hard skills".
+[] Adicionar carousel vertical em "projetos".
+[x] Adicionar link para o "github" e "linkedin".
 [] Funcionalidade de "accordion" nas "soft skills"
+
+[] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
 
 [x] Icone de seta ao passar o mouse em uma "area de movimento".
 [] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
