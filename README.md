@@ -6,6 +6,6 @@
 - [Next.js]()
 - [TailwindCSS]()
 - [SASS]()
-- [Gsap]()
+- [Gsap](https://gsap.com/)
 - [NextUI]()
 - [Lenis](https://lenis.studiofreight.com/)

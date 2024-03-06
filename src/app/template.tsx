@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from '@studio-freight/lenis'
 
 export default function Transition({
   children,
@@ -14,19 +13,6 @@ export default function Transition({
   if(typeof window !== 'undefined') {
     //Register
     gsap.registerPlugin(ScrollTrigger);
-
-    //Lenis Instance
-    const lenis = new Lenis()
-
-    lenis.on('scroll', () => {})
-
-    lenis.on('scroll', ScrollTrigger.update)
-
-    gsap.ticker.add((time)=>{
-      lenis.raf(time * 1000)
-    })
-
-    gsap.ticker.lagSmoothing(0)
   }
   
   return (

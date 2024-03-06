@@ -1,0 +1,22 @@
+.projects {
+  @apply w-[240px] h-full;
+  
+  @apply flex flex-col gap-[15px];
+  
+  .body {
+    @apply flex flex-col gap-[30px];
+    @apply overflow-y-auto;
+    @apply h-full;
+
+    .item {
+      @apply flex flex-col gap-[7px];
+      @apply text-center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .projects {
+    @apply w-full;
+  }
+}

@@ -1,11 +1,24 @@
-import Hero from "@/components/Pages/Home/Hero";
-import Projects from "@/components/Pages/Home/Projects";
+'use client';
+
+import css from './page.module.scss'
+
+import AboutMe from "@/components/AboutMe";
+import CurrentProject from '@/components/CurrentProject';
+import Camera from '@/components/Default/Camera';
+import Experiences from '@/components/Experiences';
+import Projects from '@/components/Projects';
+import { useRef } from 'react';
 
 export default function Home() {
+  const container = useRef<HTMLDivElement>(null);
+  
   return (
-    <main className="home">
-      <Hero />
+    <main ref={container} className={css["home"]}>
+      <Camera container={container} />
+      <AboutMe />
+      <Experiences />
       <Projects />
+      <CurrentProject />
     </main>
   );
 }

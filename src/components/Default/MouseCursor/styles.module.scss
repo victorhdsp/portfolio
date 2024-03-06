@@ -1,0 +1,26 @@
+.mouse-cursor {
+  @apply fixed z-50 left-full top-full;
+  @apply transform -translate-x-1/2 -translate-y-1/2;
+  @apply w-4 h-4;
+  @apply border-black border rounded-full;
+  @apply bg-transparent;
+  @apply pointer-events-none;
+  @apply transition-transform duration-200 ease-in-out;
+  @apply opacity-75;
+
+  [data-icon] {
+    @apply absolute left-1/2 top-1/2;
+    @apply w-4 h-4;
+    @apply transform -translate-x-1/2 -translate-y-1/2;
+    @apply pointer-events-none;
+    @apply scale-0;
+    @apply transition-transform duration-200 ease-in-out;
+  }
+
+  &.camera-right, &.camera-left {
+    @apply scale-150;
+  }
+
+  &.camera-right .arrow-right { @apply scale-100; }
+  &.camera-left .arrow-left { @apply scale-100; }
+}

@@ -1,0 +1,40 @@
+.current-project {
+  @apply w-[700px] h-full;
+  
+  @apply flex flex-col gap-[30px];
+  
+  .header {
+    @apply flex flex-col gap-[15px];
+
+    .technologies {
+      @apply flex items-center gap-[15px];
+    
+      .item {
+        @apply flex items-center gap-[7px];
+      }
+    }
+
+    .types {
+      @apply flex items-center gap-[36px];
+
+      .option {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .body {
+    @apply flex flex-col gap-[15px];
+    @apply h-full;
+
+    .text {
+      @apply flex flex-col gap-[7px];
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .current-project {
+    @apply w-full hidden;
+  }
+}

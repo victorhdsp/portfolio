@@ -1,0 +1,42 @@
+.about-me {
+  @apply w-[420px] h-full; 
+
+  @apply grid gap-[30px];
+  grid-template-rows: auto 1fr auto;
+
+  .header {
+    @apply flex flex-col gap-[15px];
+
+    .information {
+      @apply flex gap-[12px];
+
+      h1 {
+        @apply w-full;
+      }
+    }
+  }
+
+  .resume {
+    @apply flex flex-col gap-[15px];
+    @apply max-h-[30vh];
+
+    .text {
+      @apply flex flex-col gap-[7px];
+      @apply overflow-y-auto;
+    }
+  }
+
+  .contacts {
+    @apply flex gap-[12px];
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about-me {
+    @apply w-full;
+
+    .resume {
+      @apply max-h-none;
+    }
+  }
+}

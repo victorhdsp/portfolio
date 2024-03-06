@@ -1,64 +1,71 @@
 // @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+//Custom
+:root {
+  --fake-between: calc((((100vw - 4vw) - 1020px)) / 2);
+}
+
+// Globals
 * {
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
   cursor: none;
+  line-height: 1.2;
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
+  @apply h-screen w-screen;
+  @apply overflow-hidden;
   @apply grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  grid-template-rows: auto 1fr;
 
-  .container {
-    @apply max-w-[var(--max-width)] mx-auto;
+  h1,h3 { 
+    font-size: 18px; 
   }
-  
-  h2,h3 {
-    font-family: "Jockey One", sans-serif;
-    line-height: 1.2;
+
+  h2 { 
+    font-size: 24px; 
+    font-weight: 700;
   }
-  
-  h1 {
-    font-size: 42px;
-    line-height: 1;
-  }
-  
-  h2 {
-    font-size: 32px;
-  }
-  
-  h3 {
-    font-size: 24px;
-  }
-  
-  p {
-    &.large {
-      font-size: 20px;
-    }
+
+  h3.small {
+    font-size: 16px;
   }
 
   a {
     @apply underline;
   }
+}
 
-  .button {
-    @apply rounded-lg border border-yellow;
-    @apply px-6 py-2;
-    @apply bg-yellow;
-    @apply uppercase font-bold;
-    @apply transition-colors duration-300;
-    @apply cursor-none;
-    font-size: 14px;
-
-    &:hover {
-      @apply bg-orange border-orange;
+@media screen and (min-width: 1920px) {
+  body {
+    h1,h3 {
+      font-size: 23px;
+    }
+    h2 {
+      font-size: 29px;
+    }
+    h3.small {
+      font-size: 21px;
     }
   }
 }
+
+@media screen and (min-width: 1366px) {
+  :root {
+    --fake-between: 8vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --fake-between: calc((((1200px - 4vw) - 1020px)) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    @apply h-auto overflow-y-auto;
+  }
+}
+

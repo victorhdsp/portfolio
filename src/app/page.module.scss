@@ -1,0 +1,15 @@
+.home {
+  @apply flex gap-[var(--fake-between)] items-start;
+  @apply p-[2vw];
+  @apply h-[calc(100vh-60px)];
+  @apply transition-all duration-300;
+
+  @apply overflow-hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    @apply h-auto;
+    @apply flex-col gap-[90px];
+  }
+}
