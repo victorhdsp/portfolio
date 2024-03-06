@@ -33,19 +33,19 @@
 
 ## Tarefas
 
-[] Remover Lenis
-[] Remover NextUI
+[x] Remover Lenis
+[x] Remover NextUI
 [] Adicionar gerenciador de estados
 
 [x] Adicionar biblioteca de carousel
-[] Adicionar bliblioteca de dialog
-[] Adicionar bliblioteca de accordion
-[] Adicionar bliblioteca de popover
-[] Adicionar bliblioteca de hovercard
+[x] Adicionar bliblioteca de dialog
+[x] Adicionar bliblioteca de accordion
+[x] Adicionar bliblioteca de popover
+[x] Adicionar bliblioteca de hovercard
 
 [*] Colocar todos os dados nos assets
 [] Funcionalidade "ver mais" no resumo.
-[] Visualizar "e-mail", "telefone", "endereço" e "perfil" ao colocar a seta sobre os icones.
+[x] Visualizar "e-mail", "telefone", "endereço" e "perfil" clicar sobre os icones.
 [] Funcionalidade "ver mais" em "experiências" e "educação".
 [] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
 [] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
@@ -57,6 +57,6 @@
 [] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
 
 [x] Icone de seta ao passar o mouse em uma "area de movimento".
-[] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
+[x] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
 [x] Icone de ação no mouse ao estar em cima de "eventos de ação".
 [x] Icon de web ao passar o mouse em um "link externo".
