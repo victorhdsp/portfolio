@@ -37,13 +37,13 @@
 [] Remover NextUI
 [] Adicionar gerenciador de estados
 
-[] Colocar todos os dados nos assets
+[*] Colocar todos os dados nos assets
 [] Funcionalidade "ver mais" no resumo.
 [] Visualizar "e-mail", "telefone", "endereço" e "perfil" ao colocar a seta sobre os icones.
 [] Funcionalidade "ver mais" em "experiências" e "educação".
 [] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
 [] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
-[] Adicionar carousel em "tecnologias", "soft skills", "hard skills" e "projetos".
+[*] Adicionar carousel em "tecnologias", "soft skills", "hard skills" e "projetos".
 [] Adicionar link para o "github" e "linkedin".
 [] Funcionalidade de "accordion" nas "soft skills"
 
