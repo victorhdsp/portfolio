@@ -1,16 +1,29 @@
 import css from './styles.module.scss'
-import Image from '@/components/Default/Image';
 import Link from 'next/link';
 
+import Image from '@/components/Default/Image';
+import IconsCarousel from '@/components/Default/IconsCarousel';
+
+import aboutme from '@/assets/data/aboutme'
+
 export default function CurrentProject() {
+  const hardskills = aboutme.curriculum.hardskills
+
   return (
     <section className={css["current-project"]}>
       <div className={css["header"]}>
-        <div className={css["technologies"]}>
-          <span className="item">
-            <Image src="/svg/tech/js.svg" alt="Javascript" width={36} height={36} />
-          </span>
-        </div>
+        <IconsCarousel>
+          {
+            Object.keys(hardskills).map((index) => {
+              const skill = hardskills[index]
+              return (
+                <span key={index} className={css["technology"]}>
+                  <Image src={`/svg/tech/${index}.svg`} alt={skill.name} width={36} height={36} />
+                </span>
+              )
+            })
+          }
+        </IconsCarousel>
         <div className={css["types"]}>
           <button className={"option"}>Front-end</button>
           <button className={"option"}>Backend</button>

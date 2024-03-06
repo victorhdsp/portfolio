@@ -35,12 +35,9 @@
   }
 
   .hard-skill, .soft-skill {
-    .carousel {
-      @apply flex items-center gap-[15px];
-    
-      .item {
-        @apply flex items-center gap-[7px];
-      }
+    .item {
+      @apply flex items-center gap-[7px];
+      @apply px-[16px];
     }
   }
 

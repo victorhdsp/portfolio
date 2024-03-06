@@ -5,13 +5,10 @@
   
   .header {
     @apply flex flex-col gap-[15px];
-
-    .technologies {
-      @apply flex items-center gap-[15px];
     
-      .item {
-        @apply flex items-center gap-[7px];
-      }
+    .technology {
+      @apply flex items-center gap-[7px];
+      @apply px-[16px];
     }
 
     .types {

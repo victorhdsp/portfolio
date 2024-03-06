@@ -2,7 +2,14 @@ import Image from 'next/image';
 import css from './styles.module.scss'
 import Link from 'next/link';
 
+import aboutme from '@/assets/data/aboutme'
+import IconsCarousel from '../Default/IconsCarousel';
+
+
 export default function Experiences() {
+  const hardskills = aboutme.curriculum.hardskills
+  const softskills = aboutme.curriculum.softskills
+
   return (
     <section className={css["experiences"]}>
       <div className={css["professional"]}>
@@ -48,11 +55,18 @@ export default function Experiences() {
           <h2>Hard skills</h2>
           <Image src="/svg/icon/search.svg" alt="Pesquisar HardSkill" width={24} height={24} />
         </div>
-        <div className={css["carousel"]}>
-          <span className="item">
-            <Image src="/svg/tech/js.svg" alt="Javascript" width={36} height={36} />
-          </span>
-        </div>
+        <IconsCarousel>
+          {
+            Object.keys(hardskills).map((index) => {
+              const skill = hardskills[index]
+              return (
+                <span key={index} className={css["item"]}>
+                  <Image src={`/svg/tech/${index}.svg`} alt={skill.name} width={36} height={36} />
+                </span>
+              )
+            })
+          }
+        </IconsCarousel>
       </div>
 
       <div className={css["soft-skill"]}>
@@ -60,17 +74,19 @@ export default function Experiences() {
           <h2>Soft skills</h2>
           <Image src="/svg/icon/search.svg" alt="Pesquisar SoftSkill" width={24} height={24} />
         </div>
-        <div className={css["carousel"]}>
-          <span className={css["item"]}>
-            <Image src="/svg/icon/messages.svg" alt="Comunicação" width={24} height={24} />
-            <p>Comunicação</p>
-          </span>
-          <Image src="/svg/icon/lamp.svg" alt="Criatividade" width={24} height={24} />
-          <Image src="/svg/icon/happy-emoji.svg" alt="Inteligência emocional" width={24} height={24} />
-          <Image src="/svg/icon/note.svg" alt="Organização" width={24} height={24} />
-          <Image src="/svg/icon/message-question.svg" alt="Curiosidade" width={24} height={24} />
-          <Image src="/svg/icon/security.svg" alt="Responsabilidade" width={24} height={24} />
-        </div>
+        <IconsCarousel>
+          {
+            Object.keys(softskills).map((index) => {
+              const skill = softskills[index]
+              return (
+                <span key={index} className={css["item"]}>
+                  <Image src={`/svg/softskills/${index}.svg`} alt={skill.name} width={24} height={24} />
+                  {/* <p>{ skill.name }</p> */}
+                </span>
+              )
+            })
+          }
+        </IconsCarousel>
       </div>
     </section>
   );
