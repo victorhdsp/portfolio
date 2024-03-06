@@ -1,7 +1,7 @@
 import css from './styles.module.scss'
 import Link from 'next/link';
+import Image from 'next/image';
 
-import Image from '@/components/Default/Image';
 import IconsCarousel from '@/components/Default/IconsCarousel';
 
 import aboutme from '@/assets/data/aboutme'
@@ -32,7 +32,7 @@ export default function CurrentProject() {
       </div>
 
       <div className={css["body"]}>
-        <Image src='images/home/vevalo.png' alt='Vevalo' />
+        <Image src='/images/home/vevalo.png' alt='Vevalo' width={700} height={393} />
         <div className={css["text"]}>
           <h3>Contexto:</h3>
           <p>Lorem ipsum dolor sit amet. Sit quidem sapiente qui molestiae numquam At dolorem neque et iste animi est dolore reprehenderit quo dolore ipsum! A voluptas enim sit porro harum eum nesciunt explicabo sed reiciendis placeat est incidunt tempore et obcaecati voluptas in obcaecati provident. Qui voluptates ullam eum sint consequatur rem totam quia?</p>
