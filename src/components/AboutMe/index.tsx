@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 import aboutme from '@/assets/data/aboutme'
+import Profile from './Profile';
+import Locale from './Locale';
+import Email from './Email';
+import Telphone from './Telphone';
 
 export default function AboutMe() {
   return (
@@ -11,8 +15,8 @@ export default function AboutMe() {
         <Image src='/images/home/victorhdsp.png' alt='Victor Hugo de Souza Pereira' width={420} height={420} />
         <span className={css["information"]}>
           <h1>{ aboutme.name }</h1>
-          <Image src="/svg/icon/profile.svg" alt="Perfil" width={24} height={24} />
-          <Image src="/svg/icon/locale.svg" alt="Localização" width={24} height={24} />
+          <Profile />
+          <Locale />
         </span>
       </div>
 
@@ -21,12 +25,12 @@ export default function AboutMe() {
         <div className={css["text"]}>
           { aboutme.curriculum.resume.map(text=>(<p key={text}>{text}</p>)) }
         </div>
-        <button data-view>Leia mais</button>
+        <button>Leia mais</button>
       </div>
 
       <div className={css["contacts"]}>
-        <Image src="/svg/icon/email.svg" alt="E-mail" width={24} height={24} />
-        <Image src="/svg/icon/telphone.svg" alt="Telefone" width={24} height={24} />
+        <Email />
+        <Telphone />
       </div>
     </section>
   );
