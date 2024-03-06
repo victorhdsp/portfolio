@@ -45,5 +45,9 @@
 [] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
 [] Adicionar carousel em "tecnologias", "soft skills", "hard skills" e "projetos".
 [] Adicionar link para o "github" e "linkedin".
+[] Funcionalidade de "accordion" nas "soft skills"
 
+[x] Icone de seta ao passar o mouse em uma "area de movimento".
 [] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
+[] Icone de ação no mouse ao estar em cima de "eventos de ação".
+[] Icon de web ao passar o mouse em um "link externo".
