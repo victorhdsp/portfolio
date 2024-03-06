@@ -16,7 +16,7 @@ export default function IconsCarousel({children}: Props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
-    variableWidth: true
+    variableWidth: true,
   };
   
   return (
