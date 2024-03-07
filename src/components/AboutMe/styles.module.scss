@@ -23,6 +23,10 @@
       .text {
         @apply w-full;
         @apply flex flex-col gap-[7px];
+
+        b {
+          @apply font-bold;
+        }
       }
     }
   }
