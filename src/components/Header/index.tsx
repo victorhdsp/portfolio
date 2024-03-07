@@ -12,7 +12,7 @@ const patrick_hand = Patrick_Hand({
 export default function Header() {
   return (
     <header className={css["header"]}>
-      <h1 className={`${css["logo"]} ${patrick_hand.className}`}>VictorHugo</h1>
+      <h1 className={`${css["logo"]} ${patrick_hand.className}`}>VictorH.</h1>
 
       <div className={css["actions"]}>
         <div className={css["music"]}>

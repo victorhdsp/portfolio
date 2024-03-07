@@ -1,12 +1,12 @@
 .header {
   @apply relative z-30;
-  @apply w-screen h-[60px];
-  @apply px-[2vw];
+  @apply w-screen h-[40px];
+  @apply px-[var(--padding-x)];
   @apply flex justify-between items-center;
   background-color: #F5F5F5;
 
   .logo {
-    font-size: 16px;
+    font-size: 24px;
     letter-spacing: -0.5px;
   }
 

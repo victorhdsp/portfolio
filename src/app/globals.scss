@@ -3,7 +3,9 @@
 
 //Custom
 :root {
-  --fake-between: calc((((100vw - 4vw) - 1020px)) / 3);
+  --fake-between: calc((((100vw - 10vw) - (1020px - 120px))) / 2);
+  --padding-x: 5vw;
+  --padding-y: 2vh;
 }
 
 // Globals
@@ -61,7 +63,7 @@ body {
 
 @media screen and (min-width: 1441px) {
   :root {
-    --fake-between: 8vw;
+    // --fake-between: 8vw;
   }
 }
 

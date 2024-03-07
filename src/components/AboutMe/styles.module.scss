@@ -18,10 +18,10 @@
 
   .resume {
     @apply flex flex-col gap-[15px];
-    @apply max-h-[30vh];
+    @apply max-h-[calc(100vh-40px-344px-24px-60px-4vh)];
 
     .text {
-      @apply flex flex-col gap-[7px];
+      @apply flex flex-col gap-[10px];
       @apply overflow-y-auto;
     }
     

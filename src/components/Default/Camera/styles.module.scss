@@ -1,8 +1,10 @@
 .right-moviment, .left-moviment {
-  @apply w-[5vw];
+  --hover-moviment: 10vw;
+
+  @apply w-[var(--hover-moviment)];
   @apply h-screen;
   @apply fixed top-0 z-20;
-  @apply opacity-10;
+  @apply opacity-25;
 
   &.inactive {
     @apply hidden;
@@ -10,7 +12,7 @@
 }
 
 .right-moviment {
-  @apply left-[95vw];
+  @apply left-[calc(100vw-var(--hover-moviment))];
   @apply bg-gradient-to-l from-black to-transparent;
 }
 
