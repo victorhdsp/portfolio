@@ -56,6 +56,12 @@ body {
   button {
     @apply cursor-none;
   }
+
+  input {
+    @apply h-[24px];
+    @apply bg-gray-50;
+    @apply border-b border-gray-300;
+  }
 }
 
 @media screen and (min-width: 1920px) {
