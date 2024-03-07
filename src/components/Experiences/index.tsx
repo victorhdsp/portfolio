@@ -1,11 +1,11 @@
-import Image from 'next/image';
 import css from './styles.module.scss'
-import Link from 'next/link';
 
 import aboutme from '@/assets/data/aboutme'
-import IconsCarousel from '../Default/IconsCarousel';
+
+import IconsCarousel from '@/components/Default/IconsCarousel';
 import Technology from './Technology';
 import SoftSkill from './Softskill';
+import Icon from '@/components/Default/Icon';
 
 
 export default function Experiences() {
@@ -17,7 +17,7 @@ export default function Experiences() {
       <div className={css["professional"]}>
         <div className={css["title"]}>
           <h2>Experiências</h2>
-          <Image src="/svg/icon/more.svg" alt="Mais experiências profissionais" width={24} height={24} />
+          <Icon src="/svg/icon/more.svg" alt="Mais experiências profissionais" size='medium' />
         </div>
         <div className={css["item"]}>
           <span><b>Agência Gatilho</b> - <p>01/22 | 02/24</p></span>
@@ -32,7 +32,7 @@ export default function Experiences() {
       <div className={css["educational"]}>
         <div className={css["title"]}>
           <h2>Educação</h2>
-          <Image src="/svg/icon/more.svg" alt="Mais cursos ou certificados" width={24} height={24} />
+          <Icon src="/svg/icon/more.svg" alt="Mais cursos ou certificados" size='medium' />
         </div>
         <div className={css["item"]}>
           <span><b>Estácio de Sá</b> - <p>01/22 | 12/24</p></span>
@@ -55,7 +55,7 @@ export default function Experiences() {
       <div className={css["hard-skill"]}>
         <div className={css["title"]}>
           <h2>Hard skills</h2>
-          <Image src="/svg/icon/search.svg" alt="Pesquisar HardSkill" width={24} height={24} />
+          <Icon src="/svg/icon/search.svg" alt="Pesquisar HardSkill" size='medium' />
         </div>
         <IconsCarousel>
           {
@@ -72,7 +72,7 @@ export default function Experiences() {
       <div className={css["soft-skill"]}>
         <div className={css["title"]}>
           <h2>Soft skills</h2>
-          <Image src="/svg/icon/search.svg" alt="Pesquisar SoftSkill" width={24} height={24} />
+          <Icon src="/svg/icon/search.svg" alt="Pesquisar SoftSkill" size='medium' />
         </div>
         <IconsCarousel>
           {

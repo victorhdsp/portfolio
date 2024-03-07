@@ -1,5 +1,9 @@
 .trigger {
-  @apply min-w-[24px];
+  @apply min-w-[24px] h-min;
+
+  >* {
+    @apply pointer-events-none;
+  }
 }
 
 .content {

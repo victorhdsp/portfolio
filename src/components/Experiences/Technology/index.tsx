@@ -1,9 +1,9 @@
 import css from './styles.module.scss'
 
-import Image from 'next/image'
 import * as HoverCard from '@radix-ui/react-hover-card';
 
 import { HardSkill } from "@/assets/data/hardskills"
+import Icon from '@/components/Default/Icon';
 
 interface Props {
   src: string,
@@ -15,7 +15,7 @@ export default function Technology({ src, skill }: Props) {
     <HoverCard.Root>
       <HoverCard.Trigger asChild>
         <span data-view className={css["trigger"]}>
-          <Image src={src} alt={skill.name} width={36} height={36} />
+          <Icon src={src} alt={skill.name} size='xlarge' />
         </span>
 
       </HoverCard.Trigger>

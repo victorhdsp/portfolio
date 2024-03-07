@@ -5,6 +5,7 @@ import Image from 'next/image';
 import IconsCarousel from '@/components/Default/IconsCarousel';
 
 import aboutme from '@/assets/data/aboutme'
+import Icon from '@/components/Default/Icon';
 
 export default function CurrentProject() {
   const hardskills = aboutme.curriculum.hardskills
@@ -18,7 +19,7 @@ export default function CurrentProject() {
               const skill = hardskills[index]
               return (
                 <span key={index} className={css["technology"]}>
-                  <Image src={`/svg/tech/${index}.svg`} alt={skill.name} width={36} height={36} />
+                  <Icon src={`/svg/tech/${index}.svg`} alt={skill.name} size='xlarge' />
                 </span>
               )
             })
@@ -32,7 +33,7 @@ export default function CurrentProject() {
       </div>
 
       <div className={css["body"]}>
-        <Image src='/images/home/vevalo.png' alt='Vevalo' width={700} height={393} />
+        <Image className={css["image"]} src='/images/home/vevalo.png' alt='Vevalo' width={700} height={393} />
         <div className={css["text"]}>
           <h3>Contexto:</h3>
           <p>Lorem ipsum dolor sit amet. Sit quidem sapiente qui molestiae numquam At dolorem neque et iste animi est dolore reprehenderit quo dolore ipsum! A voluptas enim sit porro harum eum nesciunt explicabo sed reiciendis placeat est incidunt tempore et obcaecati voluptas in obcaecati provident. Qui voluptates ullam eum sint consequatur rem totam quia?</p>

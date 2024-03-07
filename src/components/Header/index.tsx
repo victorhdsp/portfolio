@@ -3,6 +3,7 @@ import css from './styles.module.scss'
 
 import { Patrick_Hand } from '@next/font/google'
 import Link from 'next/link';
+import Icon from '@/components/Default/Icon';
 
 const patrick_hand = Patrick_Hand({
   subsets: ["latin"],
@@ -16,14 +17,14 @@ export default function Header() {
 
       <div className={css["actions"]}>
         <div className={css["music"]}>
-          <Image src="/svg/icon/volume.svg" alt="Habilitar som" width={24} height={24} />
+          <Icon src="/svg/icon/volume.svg" alt="Habilitar som" size='medium' />
         </div>
         <div className={css["medias"]}>
           <Link href="https://www.linkedin.com/in/victorhdsp/">
-            <Image src="/svg/medias/linkedin.svg" alt="LinkedIn" width={32} height={32} />
+            <Icon src="/svg/medias/linkedin.svg" alt="LinkedIn" size='large' />
           </Link>
           <Link href="https://github.com/lkt226">
-            <Image src="/svg/medias/github.svg" alt="Github" width={32} height={32} />
+            <Icon src="/svg/medias/github.svg" alt="Github" size='large' />
           </Link>
         </div>
       </div>

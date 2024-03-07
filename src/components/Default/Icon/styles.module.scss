@@ -1,0 +1,26 @@
+.icon {
+  &[data-size='small'] {
+    width: 1.112vw;
+    height: 1.112vw;
+    min-width: 16px;
+    min-height: 16px;
+  }
+  &[data-size='medium'] {
+    width: 1.667vw;
+    height: 1.667vw;
+    min-width: 24px;
+    min-height: 24px;
+  }
+  &[data-size='large'] {
+    width: 2.223vw;
+    height: 2.223vw;
+    min-width: 32px;
+    min-height: 32px;
+  }
+  &[data-size='xlarge'] {
+    width: 2.5vw;
+    height: 2.5vw;
+    min-width: 36px;
+    min-height: 36px;
+  }
+}
