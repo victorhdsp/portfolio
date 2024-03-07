@@ -6,6 +6,8 @@ import IconsCarousel from '@/components/Default/IconsCarousel';
 import Technology from './Technology';
 import SoftSkill from './Softskill';
 import Icon from '@/components/Default/Icon';
+import MoreProfessional from './MoreProfessional';
+import MoreEducational from './MoreEducational';
 
 
 export default function Experiences() {
@@ -17,7 +19,7 @@ export default function Experiences() {
       <div className={css["professional"]}>
         <div className={css["title"]}>
           <h2>Experiências</h2>
-          <Icon src="/svg/icon/more.svg" alt="Mais experiências profissionais" size='medium' />
+          <MoreProfessional />
         </div>
         <div className={css["item"]}>
           <span><b>Agência Gatilho</b> - <p>01/22 | 02/24</p></span>
@@ -32,7 +34,7 @@ export default function Experiences() {
       <div className={css["educational"]}>
         <div className={css["title"]}>
           <h2>Educação</h2>
-          <Icon src="/svg/icon/more.svg" alt="Mais cursos ou certificados" size='medium' />
+          <MoreEducational />
         </div>
         <div className={css["item"]}>
           <span><b>Estácio de Sá</b> - <p>01/22 | 12/24</p></span>

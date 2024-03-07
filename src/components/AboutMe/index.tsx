@@ -7,6 +7,7 @@ import Profile from './Profile';
 import Locale from './Locale';
 import Email from './Email';
 import Telphone from './Telphone';
+import MoreResume from './MoreResume';
 
 export default function AboutMe() {
   return (
@@ -16,7 +17,7 @@ export default function AboutMe() {
         <span className={css["information"]}>
           <div className={css["text"]}>
             <h1>{ aboutme.name }</h1>
-            <p>{ aboutme.curriculum.jobTitle }</p>
+            <p><b>{ aboutme.curriculum.jobTitle }</b></p>
           </div>
           <Profile />
           <Locale />
@@ -28,7 +29,7 @@ export default function AboutMe() {
         <div className={css["text"]}>
           { aboutme.curriculum.resume.map(text=>(<p key={text}>{text}</p>)) }
         </div>
-        <button>Leia mais</button>
+        <MoreResume />
       </div>
 
       <div className={css["contacts"]}>
