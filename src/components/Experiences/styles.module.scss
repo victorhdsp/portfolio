@@ -1,5 +1,5 @@
 .experiences {
-  @apply w-[360px] h-full; 
+  @apply w-[var(--experiences)] h-full; 
 
   @apply flex flex-col justify-between gap-[15px];
 

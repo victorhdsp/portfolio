@@ -1,6 +1,6 @@
 .header {
   @apply relative z-30;
-  @apply w-screen h-[40px];
+  @apply w-screen h-[var(--header)];
   @apply px-[var(--padding-x)];
   @apply flex justify-between items-center;
   background-color: #F5F5F5;

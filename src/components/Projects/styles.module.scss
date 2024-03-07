@@ -1,5 +1,5 @@
 .projects {
-  @apply w-[240px] h-full;
+  @apply w-[var(--projects)] h-full;
   
   @apply flex flex-col gap-[15px];
   
