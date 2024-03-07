@@ -44,19 +44,20 @@
 [x] Adicionar bliblioteca de hovercard
 
 [*] Colocar todos os dados nos assets
-[] Funcionalidade "ver mais" no resumo.
+[x] Funcionalidade "ver mais" no resumo.
+[x] Funcionalidade "ver mais" em "experiências" e "educação".
 [x] Visualizar "e-mail", "telefone", "endereço" e "perfil" clicar sobre os icones.
-[] Funcionalidade "ver mais" em "experiências" e "educação".
 [] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
-[] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
 [x] Adicionar carousel em "tecnologias", "soft skills", "hard skills".
 [] Adicionar carousel vertical em "projetos".
 [x] Adicionar link para o "github" e "linkedin".
 [x] Funcionalidade de "accordion" nas "soft skills" (modificado pra ficar padronizado com hovercard)
 [x] Adicionar Toast de aviso ao copiar informação com o "clipboard".
 
+[] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
 [] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
-[] Dialog lateral com barra de pesquisa para "Experiências"
+[x] Dialog lateral com barra de pesquisa para "Experiências".
+[] Adicionar animação em Dialogs laterais.
 
 [x] Icone de seta ao passar o mouse em uma "area de movimento".
 [x] Icone de visão no mouse ao passar o mouse sobre algo de é "abrivel".
