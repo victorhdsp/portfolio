@@ -7,12 +7,13 @@ import Slider from "react-slick";
 
 interface Props {
   children: React.ReactNode;
+  infinite?: boolean;
 }
 
-export default function IconsCarousel({children}: Props) {
+export default function IconsCarousel({children, infinite}: Props) {
   const settings = {
     className: "center",
-    infinite: true,
+    infinite: infinite || false,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
