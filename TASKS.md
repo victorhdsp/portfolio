@@ -35,7 +35,7 @@
 
 [x] Remover Lenis
 [x] Remover NextUI
-[] Adicionar gerenciador de estados
+[x] Adicionar gerenciador de estados
 
 [x] Adicionar biblioteca de carousel
 [x] Adicionar bliblioteca de dialog
@@ -53,7 +53,7 @@
 [] Adicionar carousel vertical em "projetos".
 [x] Adicionar link para o "github" e "linkedin".
 [x] Funcionalidade de "accordion" nas "soft skills" (modificado pra ficar padronizado com hovercard)
-[] Adicionar Toast de aviso ao copiar informação com o "clipboard".
+[x] Adicionar Toast de aviso ao copiar informação com o "clipboard".
 
 [] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
 [] Dialog lateral com barra de pesquisa para "Experiências"
