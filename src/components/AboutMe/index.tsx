@@ -12,9 +12,12 @@ export default function AboutMe() {
   return (
     <section className={css["about-me"]}>
       <div className={css["header"]}>
-        <Image src='/images/home/victorhdsp.png' alt='Victor Hugo de Souza Pereira' width={420} height={420} />
+        <Image className={css["image"]} src='/images/home/victorhdsp.png' alt='Victor Hugo de Souza Pereira' width={420} height={420} />
         <span className={css["information"]}>
-          <h1>{ aboutme.name }</h1>
+          <div className={css["text"]}>
+            <h1>{ aboutme.name }</h1>
+            <p>{ aboutme.curriculum.jobTitle }</p>
+          </div>
           <Profile />
           <Locale />
         </span>

@@ -6,6 +6,7 @@ const curriculum = {
     'Sou um desenvolvedor web com 3 anos de experiência, meu foco é frontend mas tenho experiência com backend em Node e PHP, além de algumas skills de DevOps como Docker e AWS.',
     'Atualmente estou cursando "Analise e desenvolvimento de sistemas" na Estácio e assim que terminar devo buscar uma Pós-graduação relacionada a produtos provavelmente, visto que tenho me divertido bastante tentando rodar meus projetos pessoais.'
   ],
+  jobTitle: 'Desenvolvedor WEB',
   experiences: {
     professional: [
       {
