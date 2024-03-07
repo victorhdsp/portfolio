@@ -47,7 +47,7 @@
 [x] Funcionalidade "ver mais" no resumo.
 [x] Funcionalidade "ver mais" em "experiências" e "educação".
 [x] Visualizar "e-mail", "telefone", "endereço" e "perfil" clicar sobre os icones.
-[] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
+[x] Funcionalidade de "pesquisar" em "hard skills" e "soft skills".
 [x] Adicionar carousel em "tecnologias", "soft skills", "hard skills".
 [] Adicionar carousel vertical em "projetos".
 [x] Adicionar link para o "github" e "linkedin".
