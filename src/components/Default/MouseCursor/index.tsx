@@ -27,11 +27,21 @@ export default function MouseCursor() {
             }
           }
 
-          const hasHoverTag = (tag: string, className:string) => {
-            if (target.tagName === tag) {
-              cursorCurrent.classList.add(css[className])
-            } else {
-              cursorCurrent.classList.remove(css[className])
+          const hasHoverTag = (tag: string | string[], className:string) => {
+            if (Array.isArray(tag)) {
+              if (tag.includes(target.tagName)) {
+                cursorCurrent.classList.add(css[className])
+              } else {
+                cursorCurrent.classList.remove(css[className])
+              }
+              return
+            }
+            else {
+              if (target.tagName === tag) {
+                cursorCurrent.classList.add(css[className])
+              } else {
+                cursorCurrent.classList.remove(css[className])
+              }
             }
           }
 
@@ -39,7 +49,7 @@ export default function MouseCursor() {
           hasHover("data-camera-right")
           hasHover("data-view")
 
-          hasHoverTag("BUTTON", "pointer")
+          hasHoverTag(["BUTTON", "INPUT"], "pointer")
           hasHoverTag("A", "web")
         }
       })
