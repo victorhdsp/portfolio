@@ -107,6 +107,11 @@ const hardskills: HardSkills = {
     level: 1,
     alt: "Modelagem 1D"
   },
+  // figma: {
+  //   name: "Figma",
+  //   level: 1,
+  //   alt: "Prototipagem"
+  // },
 }
 
 export default hardskills

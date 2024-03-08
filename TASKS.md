@@ -43,7 +43,7 @@
 [x] Adicionar bliblioteca de popover
 [x] Adicionar bliblioteca de hovercard
 
-[*] Colocar todos os dados nos assets
+[] Colocar todos os dados nos assets
 [x] Funcionalidade "ver mais" no resumo.
 [x] Funcionalidade "ver mais" em "experiências" e "educação".
 [x] Visualizar "e-mail", "telefone", "endereço" e "perfil" clicar sobre os icones.
@@ -54,8 +54,8 @@
 [x] Funcionalidade de "accordion" nas "soft skills" (modificado pra ficar padronizado com hovercard)
 [x] Adicionar Toast de aviso ao copiar informação com o "clipboard".
 
-[] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
-[] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porem no "current project".
+[x] Funcionalidade de "filtro" em "current project", porém filtrando em "projetos".
+[x] Adicionar funcionalidade de visualizar o projeto selecionado em "projetos" porém no "current project".
 [x] Dialog lateral com barra de pesquisa para "Experiências".
 [] Adicionar animação em Dialogs laterais.
 

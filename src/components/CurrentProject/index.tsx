@@ -7,8 +7,20 @@ import IconsCarousel from '@/components/Default/IconsCarousel';
 import aboutme from '@/assets/data/aboutme'
 import Icon from '@/components/Default/Icon';
 
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState } from "@/app/store";
+import { selectFilterWord } from '@/features/projects/projectSlice';
+
 export default function CurrentProject() {
   const hardskills = aboutme.curriculum.hardskills
+  const projects = aboutme.projects
+
+  const [currentProject] = useSelector((state: RootState) => [state.project.current])
+  const dispatch = useDispatch()
+
+  const handleSelectFilter = (word: string) => {
+    dispatch(selectFilterWord(word))
+  }
 
   return (
     <section className={css["current-project"]}>
@@ -18,7 +30,7 @@ export default function CurrentProject() {
             Object.keys(hardskills).map((index) => {
               const skill = hardskills[index]
               return (
-                <span key={index} className={css["technology"]}>
+                <span key={index} className={css["technology"]} onClick={() => handleSelectFilter(skill.name)}>
                   <Icon src={`/svg/tech/${index}.svg`} alt={skill.name} size='xlarge' />
                 </span>
               )
@@ -26,17 +38,17 @@ export default function CurrentProject() {
           }
         </IconsCarousel>
         <div className={css["types"]}>
-          <button className={"option"}>Front-end</button>
-          <button className={"option"}>Backend</button>
-          <button className={"option"}>Plugin</button>
+          <button className={"option"} onClick={() => handleSelectFilter('front-end')}>Front-end</button>
+          <button className={"option"} onClick={() => handleSelectFilter('backend')}>Backend</button>
+          <button className={"option"} onClick={() => handleSelectFilter('plugin')}>Plugin</button>
         </div>
       </div>
 
       <div className={css["body"]}>
-        <Image className={css["image"]} src='/images/home/vevalo.png' alt='Vevalo' width={700} height={393} />
+        <Image className={css["image"]} src={`/images/projects/${currentProject}.png`} alt={currentProject} width={700} height={393} />
         <div className={css["text"]}>
-          <h3>Contexto:</h3>
-          <p>Lorem ipsum dolor sit amet. Sit quidem sapiente qui molestiae numquam At dolorem neque et iste animi est dolore reprehenderit quo dolore ipsum! A voluptas enim sit porro harum eum nesciunt explicabo sed reiciendis placeat est incidunt tempore et obcaecati voluptas in obcaecati provident. Qui voluptates ullam eum sint consequatur rem totam quia?</p>
+          <h3>Descrição:</h3>
+          <p>{ projects[currentProject].description }</p>
         </div>
       </div>
     </section>

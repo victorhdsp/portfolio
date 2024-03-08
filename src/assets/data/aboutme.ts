@@ -1,4 +1,5 @@
 import curriculum from './curriculum'
+import projects from './projects'
 
 const medias = {
   instagram: 'lkt226',
@@ -14,6 +15,7 @@ const data = {
   birth: '01/01/1990',
   medias,
   curriculum,
+  projects
 }
 
 export default data
