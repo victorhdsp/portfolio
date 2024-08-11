@@ -1,0 +1,77 @@
+.root {
+    @apply relative z-0;
+
+    .inner {
+        @apply container
+                grid grid-cols-5
+                items-center;
+
+        .information {
+            @apply flex flex-col gap-y-36
+                    max-w-xl py-20
+                    col-span-3;
+
+            .title {
+                @apply flex flex-col gap-6;
+            }
+
+            .contacts {
+                @apply flex flex-col gap-6;
+                
+                .contact {
+                    @apply flex flex-col gap-1;
+
+                    h3 {
+                        font-size: 34px;
+                        letter-spacing: -0.4px;
+                    }
+                }
+            }
+        }
+
+        .box {
+            @apply min-h-[80vh];
+
+            .map {
+                @apply absolute left-[60%] top-0
+                        w-[40%] h-full object-cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        .inner {
+            @apply grid-cols-1 px-0;
+
+            .information {
+                @apply col-span-1 pt-16 pb-8 gap-y-16
+                        text-center
+                        container;
+
+                .title {
+                    @apply gap-4 items-center;
+                }
+
+                .contacts .contact {
+                    @apply gap-4 items-center;
+
+                    h3 {
+                        font-size: 24px;
+                        word-break: break-word;
+                    }
+                }
+            }
+
+            .box {
+                @apply w-full min-h-min relative;
+
+                .map {
+                    @apply relative w-full aspect-square
+                            left-0;
+                }
+            }
+        }
+    }
+}

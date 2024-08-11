@@ -1,0 +1,23 @@
+.work_experience {
+    @apply bg-primary text-white
+            py-24
+            flex flex-col gap-16;
+
+    >* {
+        @apply container;
+    }
+
+    h2 {
+        @apply text-center;
+    }
+
+    .experiences {
+        @apply flex flex-col gap-16;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work_experience {
+        @apply py-16 gap-8;
+    }
+}
