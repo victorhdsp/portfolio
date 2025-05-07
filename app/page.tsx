@@ -1,16 +1,20 @@
-import HomeHero from "@/components/organisms/Hero";
-import HomeContact from "@/components/organisms/Contact";
-import HomeWorkExperience from "@/components/organisms/WorkExperience";
-import Image from "next/image";
-import Footer from "@/components/organisms/Footer";
+import HomeLayout from "@/components/layout/Home";
+import PageHomeContact from "@/components/pages/home/contact";
+import PageHomeExperience from "@/components/pages/home/experience";
+import PageHomeHero from "@/components/pages/home/hero";
+import PageHomeMotivation from "@/components/pages/home/motivation";
+import PageHomeProjects from "@/components/pages/home/projects";
 
 export default function Home() {
   return (<>
     <main>
-      <HomeHero />
-      <HomeWorkExperience />
-      <HomeContact />
+      <HomeLayout>
+        <PageHomeHero />
+        <PageHomeMotivation />
+        <PageHomeExperience />
+        <PageHomeProjects />
+        <PageHomeContact />
+      </HomeLayout>
     </main>
-    <Footer />
   </>);
 }
