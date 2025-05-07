@@ -1,8 +1,13 @@
 import OrganismButton from "@/components/organisms/button";
 import OrganismCard from "@/components/organisms/card";
 import OrganismContainer from "@/components/organisms/container";
+import PageHomeContactSkillFinder from "./skillFinder";
+
+import { useState } from "react";
 
 export default function PageHomeContact() {
+  const [open, setOpen] = useState(false);
+
   return (
     <OrganismContainer className="contact">
       <OrganismCard>
@@ -13,8 +18,9 @@ export default function PageHomeContact() {
           icon={<span>O</span>}
         />
       </OrganismCard>
-      <Drawer open={open} onOpenChange={setOpen}>
-      </Drawer>
+      <PageHomeContactSkillFinder
+        open={open}
+      />
     </OrganismContainer>
   );
 }
