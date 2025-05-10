@@ -3,7 +3,6 @@ import PageHomeContact from "@/components/pages/home/contact";
 import PageHomeExperience from "@/components/pages/home/experience";
 import PageHomeHero from "@/components/pages/home/hero";
 import PageHomeMotivation from "@/components/pages/home/motivation";
-import PageHomeProjects from "@/components/pages/home/projects";
 
 export default function Home() {
   return (<>
@@ -12,7 +11,7 @@ export default function Home() {
         <PageHomeHero />
         <PageHomeMotivation />
         <PageHomeExperience />
-        <PageHomeProjects />
+        { /* <PageHomeProjects /> */}
         <PageHomeContact />
       </HomeLayout>
     </main>
