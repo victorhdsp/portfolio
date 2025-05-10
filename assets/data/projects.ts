@@ -7,9 +7,6 @@ const projects: IProjects = {
     name: "Test",
     description: "Test",
     url: "test",
-    skills: [
-      skills.test
-    ]
   }
 }
 

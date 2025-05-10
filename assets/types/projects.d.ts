@@ -5,5 +5,4 @@ export default interface IProject {
   name: string;
   description: string;
   url: string;
-  skills: ISkill[];
 }
