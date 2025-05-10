@@ -10,6 +10,8 @@ import SkillFinderContentDefaultValue from "./contentDefaultValue";
 import SkillFinderContentValue from "./contentValue";
 import ISkill from "@/assets/types/skills";
 import skills from "@/assets/data/skills";
+import css from "./style.module.scss";
+import OrganismDrawer from "@/components/organisms/drawer";
 
 interface Props {
   open: boolean;
@@ -35,27 +37,28 @@ export default function PageHomeContactSkillFinder(props: Props) {
   }, [search]);
 
   return (
-    <Drawer open={props.open}>
-      <DrawerContent>
-        <DrawerHeader>
-          <DrawerTitle>
-            <h2>Buscador de skills</h2>
-          </DrawerTitle>
-          <OrganismInput
-            placeholder="Pesquise por uma habilidade"
-            onChange={handleSearchInput}
-          />
-        </DrawerHeader>
-        {skill ? (
-          <SkillFinderContentValue
-            skill={skill}
-          />
-        ) : (
-          <SkillFinderContentDefaultValue
-            setSearch={setSearch}
-          />
-        )}
-      </DrawerContent>
+    <Drawer direction="right" open={props.open}>
+      <OrganismDrawer>
+          <DrawerHeader className={css.header}>
+            <DrawerTitle>
+              <h2>Buscador de skills</h2>
+            </DrawerTitle>
+            <OrganismInput
+              placeholder="Pesquise por uma habilidade"
+              onChange={handleSearchInput}
+              icon={<span>O</span>}
+            />
+          </DrawerHeader>
+          {skill ? (
+            <SkillFinderContentValue
+              skill={skill}
+            />
+          ) : (
+            <SkillFinderContentDefaultValue
+              setSearch={setSearch}
+            />
+          )}
+      </OrganismDrawer>
     </Drawer>
   );
 }

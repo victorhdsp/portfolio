@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans as Fontstyle } from "next/font/google";
-import "./globals.css";
+import "../assets/styles/globals.scss";
 
 const fontstyle = Fontstyle({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={fontstyle.className}>
+      <body>
         {children}
       </body>
     </html>

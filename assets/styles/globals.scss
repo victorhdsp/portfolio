@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Cinzel:wght@400..900&display=swap');
+@import url("./shadcn.css");
+
+body {
+  @apply text-xl text-primary;
+  background-color: blue !important;
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  
+  .cinzel {
+    font-family: "Cinzel", serif;
+  }
+  
+  .afacad {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: "Cinzel", serif;
+  }
+  
+  button {
+    @apply text-xl uppercase;
+    font-family: "Cinzel", serif;
+    text-decoration: none
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+
+    &.large {
+      @apply text-5xl;
+    }
+
+    &.small {
+      @apply text-3xl;
+    }
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  p {
+    &.large {
+      @apply text-3xl;
+    }
+  }
+}
+
