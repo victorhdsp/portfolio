@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans as Fontstyle } from "next/font/google";
 import "../assets/styles/globals.scss";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const fontstyle = Fontstyle({ subsets: ["latin"] });
+gsap.registerPlugin(useGSAP);
 
 export const metadata: Metadata = {
   title: "Victor Hugo",
