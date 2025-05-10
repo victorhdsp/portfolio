@@ -1,3 +1,5 @@
+"use client";
+
 import OrganismButton from "@/components/organisms/button";
 import OrganismCard from "@/components/organisms/card";
 import OrganismContainer from "@/components/organisms/container";
