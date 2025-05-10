@@ -1,0 +1,22 @@
+.root {
+  @apply flex flex-row;
+  @apply rounded-none rounded-l-2xl;
+  @apply w-auto h-full ml-12;
+  @apply right-0 left-auto;
+  
+  .handle {
+    @apply absolute top-0 left-5;
+    @apply h-full w-1;
+    @apply flex items-center;
+    
+    &::after {
+      content: "";
+      @apply w-1 h-3/5 rounded-full;
+      @apply bg-gray-500/20;
+    }
+  }
+  .content {
+    @apply py-16 pr-14 pl-20;
+    @apply flex flex-col gap-8;
+  }
+}

@@ -1,8 +1,10 @@
 import { Button, ButtonProps } from "@/components/ui/button";
+import css from "./style.module.scss";
 
 interface Props extends ButtonProps {
   cta?: string;
   icon?: React.ReactNode;
+  variant?: "default" | "ghost" | "outline" | "link";
 }
 
 export default function OrganismButton(props: Props) {
@@ -10,10 +12,13 @@ export default function OrganismButton(props: Props) {
 
   return (
     <Button
-      className={`gap-6 ${className}`}
       {...props}
+      className={`${css.root} ${className}`}
+      size="lg"
+      variant={props.variant || "default"}
+      data-variant={props.variant || "default"}
     >
-      {props.cta && <span>{props.cta}</span>}
+      {props.cta && <p className="font-normal">{props.cta}</p>}
       {props.icon && <span>{props.icon}</span>}
     </Button>
   );

@@ -1,13 +1,13 @@
 "use client";
 
+import OrganismDrawer from "@/components/organisms/drawer";
 import PageProject from "@/components/pages/projects";
-import { DrawerContent } from "@/components/ui/drawer";
 
 export default function PageHomeProjectsDrawerContent() {
 
   return (
-    <DrawerContent>
+    <OrganismDrawer>
       <PageProject />
-    </DrawerContent>
+    </OrganismDrawer>
   );
 }

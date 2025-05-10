@@ -7,6 +7,7 @@ import OrganismCard from "@/components/organisms/card";
 import OrganismContainer from "@/components/organisms/container";
 import { useState } from "react";
 import PageProjectMenu from "./menu";
+import css from "./style.module.scss";
 
 export default function PageProject() {
   const [project, setProject] = useState<IProject>(Object.values(projects)[0]);
@@ -16,7 +17,7 @@ export default function PageProject() {
   }
 
   return (
-    <OrganismContainer className="contact">
+    <OrganismContainer className={css.root}>
       <PageProjectMenu
         projects={projects}
         setProject={setProject}

@@ -1,0 +1,28 @@
+.root {
+  @apply flex flex-col gap-4;
+}
+
+.label {
+  @apply text-base;
+  @apply absolute;
+  @apply opacity-0;
+  @apply pointer-events-none;
+}
+
+.item {
+  @apply border border-black;
+  @apply rounded-xl;
+  @apply bg-gray-50;
+  @apply relative;
+  
+  input {
+    @apply w-full;
+    @apply pl-6 pr-10 py-3 rounded-xl;
+    @apply bg-transparent;
+  }
+}
+
+.icon {
+  @apply absolute top-1/2 right-4;
+  @apply transform -translate-y-1/2;
+}
