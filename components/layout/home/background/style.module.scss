@@ -1,12 +1,7 @@
-.root {
-  @apply relative;
-  @apply flex flex-col;
-}
-
 .background {
-    @apply fixed left-0 top-0 w-screen h-screen -z-10;
+    @apply fixed left-0 top-0 w-screen h-screen -z-20;
     
-    img {
+    .clouds {
       @apply w-full h-full object-cover;
       @apply scale-150;
       animation: bounce 5s infinite ease-in-out;

@@ -1,4 +1,4 @@
-import HomeLayout from "@/components/layout/Home";
+import HomeLayout from "@/components/layout/home";
 import PageHomeContact from "@/components/pages/home/contact";
 import PageHomeExperience from "@/components/pages/home/experience";
 import PageHomeHero from "@/components/pages/home/hero";
