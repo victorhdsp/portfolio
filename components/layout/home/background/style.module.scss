@@ -4,7 +4,7 @@
     .clouds {
       @apply w-full h-full object-cover;
       @apply scale-150;
-      animation: bounce 5s infinite ease-in-out;
+      animation: bounce 15s infinite ease-in-out;
     }
 }
 

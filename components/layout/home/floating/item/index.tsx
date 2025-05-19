@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import css from './style.module.scss';
+import css from "./style.module.scss";
 import { useGSAP } from '@gsap/react';
 import gsap, { ScrollTrigger } from 'gsap/all';
 import { useRef } from 'react';
@@ -38,12 +38,14 @@ export default function HomeLayoutFloatingItem(props: HomeLayoutFloatingProps) {
       className={props.className}
       ref={item}
     >
-      <Image
-        src={props.src}
-        alt={props.alt}
-        width={props.width}
-        height={props.height}
-      />
+      <div className={css.image}>
+        <Image
+          src={props.src}
+          alt={props.alt}
+          width={props.width}
+          height={props.height}
+        />
+      </div>
     </div>
 	);
 }
