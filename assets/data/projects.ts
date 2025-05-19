@@ -2,12 +2,17 @@ import IProject from "../types/projects";
 import skills from "./skills";
 
 const projects: IProjects = {
-  test: {
-    id: "test",
-    name: "Test",
-    description: "Test",
-    url: "test",
+}
+
+export function createProject(name: string, description: string, url: string) {
+  const id = name.toLowerCase().replace(/\s/g, "-");
+  projects[id] = {
+    id,
+    name,
+    description,
+    url
   }
+  return projects[id];
 }
 
 export default projects;
