@@ -8,7 +8,6 @@ import Anchor from "@/components/atoms/anchor";
 import { motion } from "framer-motion"
 
 function HomeHero() {
-
     return (
         <section className={css["root"]}>
             <div className={css["inner"]}>

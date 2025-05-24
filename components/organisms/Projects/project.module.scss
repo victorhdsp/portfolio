@@ -1,0 +1,47 @@
+.root {
+    @apply relative z-0;
+
+    .inner {
+        @apply container pb-8 pt-20;
+        @apply flex flex-col gap-12;
+
+        .item {
+            @apply basis-1/2 pb-12 mx-6;
+
+            .project {
+                @apply flex flex-col gap-4;
+                @apply bg-white rounded-lg shadow-lg;
+                @apply w-fit p-4;
+
+                .image {
+                    @apply aspect-video object-cover;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .root {
+        @apply pt-12;
+        .inner {
+            @apply gap-8;
+            .item {
+                @apply basis-full mx-0;
+            }
+
+            .arrows {
+                @apply left-[calc(50%-1rem)];
+                @apply top-full;
+
+                &.previos {
+                    @apply -translate-x-full;
+                }
+                &.next {
+                    @apply translate-x-full;
+                }
+            }
+        }
+    }
+}
