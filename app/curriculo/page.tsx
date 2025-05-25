@@ -1,13 +1,13 @@
 import HomeHero from "@/components/organisms/Hero";
-import HomeContact from "@/components/organisms/Contact/portfolio";
+import HomeContact from "@/components/organisms/Contact/curriculum";
+import HomeWorkExperience from "@/components/organisms/WorkExperience";
 import Footer from "@/components/organisms/Footer";
-import HomeProjects from "@/components/organisms/Projects";
 
 export default function Home() {
   return (<>
     <main>
       <HomeHero />
-      <HomeProjects />
+      <HomeWorkExperience />
       <HomeContact />
     </main>
     <Footer />
