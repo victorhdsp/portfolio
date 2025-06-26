@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans as Fontstyle } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
 const fontstyle = Fontstyle({ subsets: ["latin"] });
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={fontstyle.className}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

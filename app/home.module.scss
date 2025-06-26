@@ -1,9 +1,0 @@
-.root {
-    @apply flex flex-col gap-24;
-}
-
-@media (max-width: 768px) {
-    .root {
-        @apply gap-0;
-    }
-}
