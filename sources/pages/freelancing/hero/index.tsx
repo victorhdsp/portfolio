@@ -7,8 +7,10 @@ import {
 } from 'lucide-react'
 import Button from '@/sources/shared/components/button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
+
   return (
     <section className="w-full py-16 md:py-24 px-6 md:px-12 border-b border-gray-200">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -27,8 +29,12 @@ export default function Hero() {
             através de código e criatividade.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button leftIcon={<ArrowRightIcon />}>Conhecer Projetos</Button>
-            <Button variant="secondary">Entrar em Contato</Button>
+            <Link href="#projects">
+              <Button leftIcon={<ArrowRightIcon />}>Conhecer Projetos</Button>
+            </Link>
+            <Link href="#contact">
+              <Button variant="secondary">Entrar em Contato</Button>
+            </Link>
           </div>
         </div>
         <div className="relative">
