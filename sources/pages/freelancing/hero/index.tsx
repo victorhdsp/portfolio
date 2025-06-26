@@ -29,11 +29,18 @@ export default function Hero() {
             através de código e criatividade.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="#projects">
-              <Button leftIcon={<ArrowRightIcon />}>Conhecer Projetos</Button>
-            </Link>
             <Link href="#contact">
-              <Button variant="secondary">Entrar em Contato</Button>
+              <Button>
+                Entrar em Contato
+              </Button>
+            </Link>
+            <Link href="#projects">
+              <Button
+                leftIcon={<ArrowRightIcon />}
+                variant="secondary"
+              >
+                Conhecer Projetos
+              </Button>
             </Link>
           </div>
         </div>

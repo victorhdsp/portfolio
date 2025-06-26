@@ -1,7 +1,11 @@
+import Clarity from '@microsoft/clarity';
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { DM_Sans as Fontstyle } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
-import "./globals.css";
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+
 
 const fontstyle = Fontstyle({ subsets: ["latin"] });
 
@@ -10,13 +14,31 @@ export const metadata: Metadata = {
   description: "Criando soluções para seus problemas",
 };
 
-export default function RootLayout({
+function getClarityScript() {
+  const projectId = process.env.CLARITY_PROJECT_ID;
+  if (!projectId) {
+    console.warn("Clarity project ID is not set. Skipping Clarity script generation.");
+    return null;
+  }
+  return projectId;
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const projectId = getClarityScript()
+
+  if (projectId) {
+    Clarity.init(projectId);
+    console.log("Clarity initialized with project");
+  }
+
   return (
     <html lang="pt-BR">
+      <GoogleTagManager gtmId='GTM-PS78HTW6'/>
+      <GoogleAnalytics gaId='G-8J4KC8E62Q' />
       <body className={fontstyle.className}>
         {children}
         <Toaster />
