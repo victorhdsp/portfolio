@@ -5,7 +5,7 @@ import {
   RocketIcon,
   PuzzleIcon,
 } from 'lucide-react'
-export function About() {
+export default function About() {
   return (
     <section
       id="about"

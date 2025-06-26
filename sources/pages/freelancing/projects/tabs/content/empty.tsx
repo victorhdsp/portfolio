@@ -1,6 +1,6 @@
-import { Button } from "@/src/shared/components/button";
+import Button from "@/sources/shared/components/button";
 
-export function ProjectsTabEmptyContent() {
+export default function ProjectsTabEmptyContent() {
     return (
         <div className="p-12 border-2 border-dashed border-gray-300 rounded-md flex flex-col items-center justify-center">
             <p className="text-gray-500 text-center">

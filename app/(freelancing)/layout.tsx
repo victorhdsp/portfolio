@@ -1,4 +1,4 @@
-import { Footer } from "@/src/pages/freelancing/footer";
+import Footer from "@/sources/pages/freelancing/footer";
 
 interface FreelancingLayoutProps {
   children: React.ReactNode;

@@ -1,8 +1,10 @@
+"use client";
+
 import React from 'react'
 import { LayoutIcon } from 'lucide-react'
 import ProjectsTabs from './tabs';
 
-export function Projects() {
+export default function Projects() {
   return (
     <section
       id="projects"

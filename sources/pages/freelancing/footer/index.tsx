@@ -1,6 +1,7 @@
-import LogoVictorHdsp from '@/src/shared/components/icons/logo'
+import LogoVictorHdsp from '@/sources/shared/components/icons/logo'
 import React from 'react'
-export function Footer() {
+
+export default function Footer() {
   return (
     <footer className="w-full py-8 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">

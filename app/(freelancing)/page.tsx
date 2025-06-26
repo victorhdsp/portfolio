@@ -1,7 +1,7 @@
-import { Hero } from "@/src/pages/freelancing/hero";
-import { Projects } from "@/src/pages/freelancing/projects";
-import { About } from "@/src/pages/freelancing/about";
-import { Contact } from "@/src/pages/freelancing/contact";
+import Hero from "@/sources/pages/freelancing/hero";
+import Projects from "@/sources/pages/freelancing/projects";
+import About from "@/sources/pages/freelancing/about";
+import Contact from "@/sources/pages/freelancing/contact";
 
 export default function Home() {
   return (

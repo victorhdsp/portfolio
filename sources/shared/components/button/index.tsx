@@ -12,7 +12,7 @@ interface ButtonProps {
     name?: string;
 }
 
-export function Button(props: ButtonProps) {
+export default function Button(props: ButtonProps) {
     const { leftIcon, children, variant = 'default' } = props;
     
     return (

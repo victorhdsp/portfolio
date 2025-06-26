@@ -1,6 +1,6 @@
-import { Card } from "@/src/shared/components/card";
-import { CardContent } from "@/src/shared/components/card/content";
-import { CardHeader } from "@/src/shared/components/card/header";
+import { Card } from "@/sources/shared/components/card";
+import { CardContent } from "@/sources/shared/components/card/content";
+import { CardHeader } from "@/sources/shared/components/card/header";
 import { ArrowRightIcon } from "lucide-react";
 import { ViewProjectDto } from "../../type";
 

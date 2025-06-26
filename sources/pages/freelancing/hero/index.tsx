@@ -5,9 +5,10 @@ import {
   PuzzleIcon,
   CodeIcon,
 } from 'lucide-react'
-import { Button } from '@/src/shared/components/button'
+import Button from '@/sources/shared/components/button'
 import Image from 'next/image'
-export function Hero() {
+
+export default function Hero() {
   return (
     <section className="w-full py-16 md:py-24 px-6 md:px-12 border-b border-gray-200">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

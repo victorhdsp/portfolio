@@ -2,12 +2,12 @@
 
 import React from 'react'
 import { MailIcon, MapPinIcon, SendIcon } from 'lucide-react'
-import { Button } from '@/src/shared/components/button'
-import { contactDatabase } from '@/src/shared/data/contact'
-import { sendSubmitTobackend } from './submit'
+import Button from '@/sources/shared/components/button'
+import { contactDatabase } from '@/sources/shared/data/contact'
+import sendSubmitTobackend from './submit'
 import { toast } from 'sonner';
 
-export function Contact() {
+export default function Contact() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const currentTarget = event.currentTarget;

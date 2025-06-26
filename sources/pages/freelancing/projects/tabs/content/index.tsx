@@ -1,7 +1,7 @@
 import { TabsContent } from "@/components/ui/tabs";
 import { TTabValue, ViewProjectDto } from "../../type";
 import ProjectsTabContentCta from "./cta";
-import { ProjectsTabEmptyContent } from "./empty";
+import ProjectsTabEmptyContent from "./empty";
 import ProjectsTabContentItem from "./item";
 
 interface ProjectsTabsContentProps {

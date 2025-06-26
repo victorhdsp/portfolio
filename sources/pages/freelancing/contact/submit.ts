@@ -1,6 +1,6 @@
 import { toast as _toast } from "sonner";
 
-export async function sendSubmitTobackend(currentTarget: HTMLFormElement, toast: typeof _toast) {
+export default async function sendSubmitTobackend(currentTarget: HTMLFormElement, toast: typeof _toast) {
   const formData = new FormData(currentTarget);
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
