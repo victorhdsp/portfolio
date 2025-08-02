@@ -3,6 +3,7 @@ import { CardContent } from "@/sources/shared/components/card/content";
 import { CardHeader } from "@/sources/shared/components/card/header";
 import { ArrowRightIcon } from "lucide-react";
 import { ViewProjectDto } from "../../type";
+import Link from "next/link";
 
 interface CardProps {
     project: ViewProjectDto
@@ -34,14 +35,12 @@ export default function ProjectsTabContentItem(props: CardProps) {
                     ))}
                 </div>
                 <div className="flex justify-end mt-auto">
-                    <a
+                    <Link
                         href={props.project.link}
                         className="flex items-center text-sm font-medium"
-                        target="_blank"
-                        rel="noopener noreferrer"
                     >
                         Ver detalhes <ArrowRightIcon className="w-4 h-4 ml-1" />
-                    </a>
+                    </Link>
                 </div>
             </CardContent>
         </Card>

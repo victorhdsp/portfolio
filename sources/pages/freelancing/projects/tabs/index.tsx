@@ -1,9 +1,12 @@
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { TTabValue } from "../type";
+import { TTabValue, ViewProjectDto } from "../type";
 import ProjectsTabsContent from "./content";
-import { projectsDatabase } from "../../../../shared/data/projects";
 
-export default function ProjectsTabs() {
+interface ProjectsTabsProps {
+    projects: ViewProjectDto[];
+}
+
+export default function ProjectsTabs({ projects }: ProjectsTabsProps) {
     return (
         <Tabs defaultValue={"all" as TTabValue}>
             <TabsList>
@@ -23,19 +26,19 @@ export default function ProjectsTabs() {
 
             <ProjectsTabsContent
                 value="all"
-                projects={projectsDatabase}
+                projects={projects}
             />
             <ProjectsTabsContent
                 value="web"
-                projects={projectsDatabase}
+                projects={projects}
             />
             <ProjectsTabsContent
                 value="mobile"
-                projects={projectsDatabase}
+                projects={projects}
             />
             <ProjectsTabsContent
                 value="backend"
-                projects={projectsDatabase}
+                projects={projects}
             />
         </Tabs>
     )
