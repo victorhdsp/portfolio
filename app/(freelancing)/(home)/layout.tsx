@@ -6,7 +6,7 @@ interface FreelancingLayoutProps {
 
 export default function FreelancingLayout({ children }: FreelancingLayoutProps) {
   return (
-    <div id="body">
+    <div id="body" className="scroll-smooth antialiased">
       {children}
       <Footer />
     </div>

@@ -1,8 +1,10 @@
-import { ViewProjectDto } from "../../pages/freelancing/projects/type"
+import { ViewProjectDto } from "../../sources/pages/freelancing/projects/type"
+import supplierCollectorResume from "./supplier_collector/resume"
 
 type Projects = ViewProjectDto[]
 
 export const projectsDatabase: Projects = [
+    supplierCollectorResume,
     {
         title: "Difrisul",
         subtitle: "Distribuição de Alimentos",

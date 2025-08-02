@@ -3,8 +3,13 @@
 import React from 'react'
 import { LayoutIcon } from 'lucide-react'
 import ProjectsTabs from './tabs';
+import { ViewProjectDto } from './type';
 
-export default function Projects() {
+interface ProjectsProps {
+  projects: ViewProjectDto[];
+}
+
+export default function Projects({ projects }: ProjectsProps) {
   return (
     <section
       id="projects"
@@ -24,7 +29,7 @@ export default function Projects() {
             difíceis em realidade através de código e criatividade.
           </p>
         </div>
-        <ProjectsTabs />
+        <ProjectsTabs projects={projects} />
       </div>
     </section>
   )

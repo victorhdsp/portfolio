@@ -3,7 +3,7 @@
 import React from 'react'
 import { MailIcon, MapPinIcon, SendIcon } from 'lucide-react'
 import Button from '@/sources/shared/components/button'
-import { contactDatabase } from '@/sources/shared/data/contact'
+import { contactDatabase } from '@/data/contact'
 import sendSubmitTobackend from './submit'
 import { toast } from 'sonner';
 
